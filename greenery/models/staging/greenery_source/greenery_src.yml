@@ -24,4 +24,27 @@ sources:
         # loaded_at_field: created_at
         description: >
           user information and id
-    
+      - name: promos      
+        # loaded_at_field: created_at
+        description: >
+          promo id, status, and discount
+      - name: products      
+        # loaded_at_field: created_at
+        description: >
+          product ids, names, inventorty
+      - name: orders      
+        # loaded_at_field: created_at
+        description: >
+          order info, user info, dates
+      
+      - name: order_items      
+        # loaded_at_field: created_at
+        description: >
+          order id, product id,quantity
+      
+      - name: events    
+        # loaded_at_field: created_at
+        description: >
+          page event info and order info 
+      
+      
