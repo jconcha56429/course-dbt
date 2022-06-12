@@ -6,6 +6,7 @@ Question #1 - How many users do we have?
 130 unique users
 
 Question #2 - On average, how many orders do we receive per hour? 
+7.52 orders per hour 
 
 Question #3 - On average, how long does an order take from being placed to being delivered?
 

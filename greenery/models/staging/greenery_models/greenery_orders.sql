@@ -10,6 +10,7 @@ SELECT
   promo_id,
   address_id,
   created_at,
+  {{ dbt_utils.date_trunc('hour','created_at') }} as created_at_hours,
   order_cost,
   shipping_cost,
   order_total,
