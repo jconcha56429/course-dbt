@@ -45,7 +45,6 @@ models:
         tests:
           - not_null
           - unique 
-
   - name: greenery_events
     description: page event info and order info 
     columns:
@@ -54,7 +53,3 @@ models:
           - not_null
           - unique 
 
-
-
-  
-  

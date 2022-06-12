@@ -5,6 +5,7 @@
 }}
 
 SELECT 
+  -- UUID of each unique event on the platform
   event_id,
   -- UUID of each browsing session on the platform which can contain many events
   session_id,
@@ -20,4 +21,4 @@ SELECT
   order_id,
   -- If the event is specific to a product
   product_id
-  FROM {{ source('greenery_source', 'events') }}
+FROM {{ source('greenery_source', 'events') }}

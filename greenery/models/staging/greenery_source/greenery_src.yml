@@ -35,14 +35,12 @@ sources:
       - name: orders      
         # loaded_at_field: created_at
         description: >
-          order info, user info, dates
-      
-      - name: order_items      
+          order info, user info, dates      
+      - name: order_items
         # loaded_at_field: created_at
         description: >
           order id, product id,quantity
-      
-      - name: events    
+      - name: events
         # loaded_at_field: created_at
         description: >
           page event info and order info 
