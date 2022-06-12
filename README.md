@@ -1,8 +1,9 @@
 # Analytics engineering with dbt
 
-#Week 1 Project 
+## Week 1 Project 
 
 Question #1 - How many users do we have?
+130 unique users
 
 Question #2 - On average, how many orders do we receive per hour? 
 
