@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: greenery_addresses
+    description: address information about customers
+    columns:
+      - name: address_id
+        tests:
+          - not_null
+          - unique 
+  - name: greenery_users
+    description: user information and id
+    columns:
+      - name: user_id 
+        tests:
+          - not_null
+          - unique 
+  
+  
+  
+
+      # - name: height
+      #   tests:
+      #     - positive_values
+      # - name: weight
+      #   tests:
+      #     - positive_values
+
+
+
+
+

@@ -2,7 +2,7 @@ version: 2
 
 sources:
 
-  - name: src_greenery
+  - name: greenery_source
     schema: public
     database: dbt 
 
@@ -16,7 +16,12 @@ sources:
       error_after: {count: 48, period: hour}
 
     tables:
-      - name: stg_superheroes 
-        loaded_at_field: created_at
+      - name: addresses      
+        # loaded_at_field: created_at
         description: >
-          Contains demographic information about each superhero 
+          address information about customers
+      - name: users      
+        # loaded_at_field: created_at
+        description: >
+          user information and id
+    
