@@ -4,6 +4,7 @@
 
 Question #1 - How many users do we have?
 130 unique users
+![alt text](/workspace/course-dbt/images/Screenshot_1.png)
 
 Question #2 - On average, how many orders do we receive per hour? 
 7.52 orders per hour 
@@ -17,4 +18,4 @@ Question #4 - How many users have only made one purchase? Two purchases? Three+ 
 - Three+ orders - 71 
 
 Question #5 On average, how many unique sessions do we have per hour?
-
+16.32 unique sessions per hour 
