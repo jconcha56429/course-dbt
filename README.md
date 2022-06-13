@@ -12,5 +12,9 @@ Question #3 - On average, how long does an order take from being placed to being
 Approximately 336,252 seconds or 5,604 minutes or about 4 days rounded up
 
 Question #4 - How many users have only made one purchase? Two purchases? Three+ purchases?
+- One order - 25 
+- Two orders - 28
+- Three+ orders - 71 
 
 Question #5 On average, how many unique sessions do we have per hour?
+
