@@ -9,10 +9,12 @@
 
 ### Question #2 - On average, how many orders do we receive per hour? 
 7.52 orders per hour 
+
 ![Alt text](/images/Screenshot_2.png)
 
 ### Question #3 - On average, how long does an order take from being placed to being delivered?
 Approximately 336,252 seconds or 5,604 minutes or about 4 days rounded up
+
 ![Alt text](/images/Screenshot_3.png)
 
 
