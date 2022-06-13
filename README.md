@@ -4,7 +4,7 @@
 
 Question #1 - How many users do we have?
 130 unique users
-![alt text](/workspace/course-dbt/images/Screenshot_1.png)
+![Alt text](/images/Screenshot_1.png)
 
 Question #2 - On average, how many orders do we receive per hour? 
 7.52 orders per hour 
