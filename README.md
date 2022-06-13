@@ -20,7 +20,9 @@ Approximately 336,252 seconds or 5,604 minutes or about 4 days rounded up
 - One order - 25 
 - Two orders - 28
 - Three+ orders - 71 
-![Alt text](/images/Screenshot_7.png) ![Alt text](/images/Screenshot_8.png)
+
+![Alt text](/images/Screenshot_7.png) 
+![Alt text](/images/Screenshot_8.png)
 
 ![Alt text](/images/Screenshot_9.png) 
 
