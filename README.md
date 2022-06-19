@@ -32,3 +32,45 @@ Approximately 336,252 seconds or 5,604 minutes or about 4 days rounded up
 16.32 unique sessions per hour 
 
 ![Alt text](/images/Screenshot_10.png) 
+
+## Week 2 Project 
+
+# Question 1 - What is our user repeat rate?
+Approximately 79.84%
+
+![Alt text](/images/Week2_Q1.png) 
+
+# Question 2 - What are good indicators of a user who will likely purchase again?
+
+Categorize repeat customers and non-repeat customers
+![Alt text](/images/view_repeat_customer.png) 
+
+Join view and tables together for promos & repeat status
+![Alt text](/images/discount_repeat_customer.png)
+
+Count number of repeat/non-repeat customers which received a discount
+![Alt text](/images/count_repeat_customer_by_discount.png)
+
+
+- There are 39 repeat customers which received a discount and only one non-repeat customer which received a discount 
+
+
+
+
+# Question 3 - What about indicators of users who are likely NOT to purchase again?
+
+
+
+# Question 4 - If you had more data, what features would you want to look into to answer this question?
+
+
+
+# Question 5 - ?
+
+
+
+# Question 6 - ?
+ 
+
+
+
