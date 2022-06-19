@@ -9,7 +9,7 @@
 SELECT 
     user_id,
     order_id,
-    full_address,
+    address_id,
     promo_id,
     discount,
     order_created_at,

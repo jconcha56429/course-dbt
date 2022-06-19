@@ -11,6 +11,7 @@ SELECT
     a.state,
     a.country,
     e.event_id,
+    e.page_url,
     e.session_id,
     e.created_at AS event_created_at,
     e.event_type,

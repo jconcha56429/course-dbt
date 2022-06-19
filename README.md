@@ -134,8 +134,15 @@ I would want more data on user demographics. Such as race/ethnicity, identifying
         - delivered_at
 
 
-# Question 6 - ?
- 
+# Question 6 - Explain the marts models you added. Why did you organize the models in the way you did?
+ - core/dim_users -  Main identifying user information. Dimensions are mainly focused on noun information and descriptions.
+ - core/fact_orders - Some identifying information for future joins such as order_id, user_id, address_id in addition to general order information. 
+
+ - marketing/intermediate/int_user_order_info - Order information in addition to user information and promotional information. Figured that marketing would likely be interested in identifying user information in addition to how it relates to order information.  
+ - marketing/fact_user_orders - Identifying user information in addition to order information pulled from int_user_order_info. Pulled from intermediate model after transformations and ready too be used for analyzing order information. 
+
+ - product/intermediate/int_product - All event information from staging in addition to order information. tons of useful event imformation 
+ - product/fact_page_views
 
 
 
