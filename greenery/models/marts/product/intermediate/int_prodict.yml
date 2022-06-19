@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_product
+    description: website events join on greenery orders and promos 
