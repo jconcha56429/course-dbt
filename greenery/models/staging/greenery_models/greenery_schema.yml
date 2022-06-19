@@ -5,30 +5,67 @@ models:
     description: address information about customers
     columns:
       - name: address_id
-        # tests:
-        #   - not_null
-        #   - unique 
+        tests:
+          - not_null
+          - unique 
+      - name: address
+        tests:  
+          - not_null
+      - name: zipcode
+        tests:
+          - not_null
+      - name: state
+        tests:
+          - not_null
+      - name: country
+        tests:
+          - not_null
   - name: greenery_users
     description: user information and id
     columns:
       - name: user_id 
-        # tests:
-        #   - not_null
-        #   - unique 
+        tests:
+          - not_null
+          - unique 
+      - name: email
+        tests: 
+          - not_null
+          - unique
+      - name: first_name
+        tests:
+          - not_null
+      - name: last_name
+        tests:
+          - not_null
   - name: greenery_promos
     description: promo ids discount & status
     columns:
       - name: promo_id 
-        # tests:
-          # - not_null
-          # - unique 
+        tests:
+          - not_null
+          - unique 
+      - name: discount
+        tests:
+          - positive_values
+      - name: status
+        tests:
+          - accepted_values:
+            values: ['active', 'inactive']
   - name: greenery_products
     description: product info & id
     columns:
       - name: product_id 
-        # tests:
-        #   - not_null
-        #   - unique 
+        tests:
+          - not_null
+          - unique 
+      - name: price
+        tests:
+          - positive_values
+      - name: inventory
+        tests: 
+          - positive_values
+          - not_null
+    
 
   - name: greenery_orders
     description: order info, user info, dates
@@ -44,7 +81,6 @@ models:
       - name: order_id 
         tests:
           - not_null
-          - unique 
   - name: greenery_events
     description: page event info and order info 
     columns:

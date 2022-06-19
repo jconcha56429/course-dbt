@@ -141,8 +141,23 @@ I would want more data on user demographics. Such as race/ethnicity, identifying
  - marketing/intermediate/int_user_order_info - Order information in addition to user information and promotional information. Figured that marketing would likely be interested in identifying user information in addition to how it relates to order information.  
  - marketing/fact_user_orders - Identifying user information in addition to order information pulled from int_user_order_info. Pulled from intermediate model after transformations and ready too be used for analyzing order information. 
 
- - product/intermediate/int_product - All event information from staging in addition to order information. tons of useful event imformation 
- - product/fact_page_views
+ - product/intermediate/int_product - All event information from staging in addition to order information and some user information. Pulled so that we have analyze order information on top of page url events. 
+ - product/fact_page_views - Strictly event information pulled from int_product. 
+
+# DAG 
+
+![Alt text](/images/DAG.png) 
+
+# Part 2 Tests
+
+# Question 7 - What assumptions are you making about each model? (i.e. why are you adding each test?)
 
 
+
+# Question 8 - Did you find any “bad” data as you added and ran tests on your models? How did you go about either cleaning the data in the dbt model or adjusting your assumptions/tests?
+
+
+
+
+# Question 9 - Explain how you would ensure these tests are passing regularly and how you would alert stakeholders about bad data getting through.
 

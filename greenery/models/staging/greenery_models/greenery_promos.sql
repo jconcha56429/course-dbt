@@ -6,6 +6,6 @@
 
 SELECT 
   promo_id,
-  discount,
+  CAST(discount AS INT),
   status 
 FROM {{ source('greenery_source', 'promos') }}
