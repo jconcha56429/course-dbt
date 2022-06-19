@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: user data solidified and name concated
+  - name: fact_orders
+    description: order data related to users 
