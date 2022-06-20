@@ -3,3 +3,23 @@ version: 2
 models:
   - name: fact_page_views
     description: website events related to user id 
+    columns:
+      - name: user_id 
+        tests:
+          - not_null
+      - name: event_type 
+        tests:
+          - not_null
+      - name: event_id 
+        tests:
+          - not_null
+      - name: session_id 
+        tests:
+          - not_null
+      - name: event_type
+        tests:
+        - accepted_values:
+            values: ['checkout', 'package_shipped','page_view','add_to_cart']
+      - name: page_url 
+        tests:
+          - not_null

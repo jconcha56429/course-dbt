@@ -151,13 +151,23 @@ I would want more data on user demographics. Such as race/ethnicity, identifying
 # Part 2 Tests
 
 # Question 7 - What assumptions are you making about each model? (i.e. why are you adding each test?)
+Generally speaking, we're assuming that a lot of this data is not null such as user_id, event_id, order_id, etc. Additionally, we're also assuming that this data should be unique to their respective staging tables. 
 
+As far as integer items, it wouldn't hurt to apply our positive_values macro we created for superheroes. This would be useful for positive value integer columns such as discount, order_total, etc. 
+
+As far as categorical columns, we want to make sure they retain their respective values. Such as with status & shipping_service. 
+
+If I had more time on my hands, I would also add tests for the utc date type, as well as regex for data such as phone numbers and email addresses.
 
 
 # Question 8 - Did you find any “bad” data as you added and ran tests on your models? How did you go about either cleaning the data in the dbt model or adjusting your assumptions/tests?
+Generally speaking, I was not able to find any bad data within these models. I don't foresee this becoming a problem, unless there's a change in the UI which would prompt bad data to get through or a need to be more cautious with our data.
 
+Testing took me a bit longer than I had originally anticipated since I added general tests to most of my columns. However, there were times when I would add tests such as unique, only to remember that this table will have duplicate values. 
 
-
+I also did find that I had originally missed some categorical data when making my accepted values tests, which was corrected easily thanks to --store_failures.
 
 # Question 9 - Explain how you would ensure these tests are passing regularly and how you would alert stakeholders about bad data getting through.
+I think the best thing to do in order to make sure that these tests pass regularly would be to set up freshness and run tests regularly everyday at the begginning and end of day to see how we can better incorporate tests and deal with data via transformation. 
 
+If I had full control of this entire project, after a test failed, I would implement a change within the models to transform the data or work with engineering to make sure that this data is not able to be stored in the first place. To ease steakholders, we could host a post-mortem on how we intend to deal with the data in the future and how it impacted the data if so. 

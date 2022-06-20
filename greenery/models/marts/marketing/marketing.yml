@@ -3,3 +3,29 @@ version: 2
 models:
   - name: fact_user_order
     description: user order related information
+    columns:
+      - name: user_id 
+        tests:
+          - not_null
+      - name: order_id 
+        tests:
+          - not_null
+          - unique 
+      - name: address_id
+        tests:
+          - not_null
+      - name: order_cost
+        tests:
+          - positive_values
+      - name: discount
+        tests:
+          - positive_values
+      - name: tracking_id
+        tests:
+          - unique
+      - name: status
+        tests:
+        - accepted_values:
+            values: ['delivered', 'preparing','shipped']
+
+

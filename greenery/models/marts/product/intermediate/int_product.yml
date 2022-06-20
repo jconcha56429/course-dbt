@@ -1,5 +1,21 @@
 version: 2
 
 models:
-  - name: int_products
+  - name: int_product
     description: website events join on greenery orders and promos 
+    columns:
+      - name: user_id 
+        tests:
+          - not_null
+      - name: event_id 
+        tests:
+          - not_null
+      - name: page_url 
+        tests:
+          - not_null
+      - name: session_id 
+        tests:
+          - not_null
+      - name: event_type 
+        tests:
+          - not_null

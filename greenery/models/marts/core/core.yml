@@ -3,5 +3,52 @@ version: 2
 models:
   - name: dim_users
     description: user data solidified and name concated
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests: 
+          - not_null
+          - unique
+      - name: first_name
+        tests:
+          - not_null
+      - name: last_name
+        tests:
+          - not_null
+      - name: address_id
+        tests:
+          - not_null
+      - name: phone_number
+        tests: 
+          - not_null
+          - unique
+
   - name: fact_orders
     description: order data related to users 
+    columns:
+      - name: order_id 
+        tests:
+          - not_null
+          - unique 
+      - name: user_id 
+        tests:
+          - not_null
+      - name: address_id
+        tests:
+          - not_null
+      - name: order_cost
+        tests:
+          - positive_values
+      - name: status
+        tests:
+        - accepted_values:
+            values: ['shipped', 'preparing','delivered']
+      - name: discount
+        tests:
+          - positive_values
+      - name: order_quantity_total
+        tests:
+          - positive_values

@@ -49,7 +49,7 @@ models:
           - positive_values
       - name: status
         tests:
-          - accepted_values:
+        - accepted_values:
             values: ['active', 'inactive']
   - name: greenery_products
     description: product info & id
@@ -65,22 +65,44 @@ models:
         tests: 
           - positive_values
           - not_null
-    
+      - name: name
+        tests:
+          - not_null
+          - unique
 
   - name: greenery_orders
     description: order info, user info, dates
     columns:
       - name: order_id 
-        # tests:
-        #   - not_null
-        #   - unique 
-
+        tests:
+          - not_null
+          - unique 
+      - name: address_id
+        tests:
+          - not_null
+      - name: order_cost
+        tests:
+          - positive_values
+      - name: order_total
+        tests:
+          - positive_values
+      - name: shipping_service
+        tests:
+          - accepted_values:
+              values: [ups,usps,fedex,dhl,NULL]
   - name: greenery_order_items
     description: order id, product id,quantity
     columns:
       - name: order_id 
         tests:
           - not_null
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: quantity
+        tests:
+          - positive_values 
   - name: greenery_events
     description: page event info and order info 
     columns:
@@ -88,4 +110,13 @@ models:
         tests:
           - not_null
           - unique 
+      - name: session_id
+        tests:
+        - not_null
+      - name: user_id
+        tests:
+          - not_null
+      - name: event_type
+        tests:
+          - not_null
 
