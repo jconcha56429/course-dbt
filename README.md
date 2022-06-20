@@ -1,4 +1,5 @@
 # Analytics engineering with dbt
+Week 1 Project has been commented out for your viewing pleasure!
 <!-- 
 ## Week 1 Project 
 
