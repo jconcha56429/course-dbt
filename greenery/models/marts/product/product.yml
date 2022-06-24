@@ -23,3 +23,5 @@ models:
       - name: page_url 
         tests:
           - not_null
+  - name: conversion_rate
+    description: conversion rate for unique session_id from int_product

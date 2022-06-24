@@ -101,7 +101,7 @@ If I had full control of this entire project, after a test failed, I would imple
 
 ## Week 3 Project
 
-### PART 1: Create new models to answer the first two questions (answer questions in README file)
+### PART 1: Create new models to answer the first two questions (answer questions in README file) [Specifically create a model for this piece]
 - Question 1 - What is our overall conversion rate?
 - Question 2 - What is our conversion rate by product?
 - Question 3 - Why might certain products be converting at higher/lower rates than others? Note: we don't actually have data to properly dig into this, but we can make some hypotheses.
