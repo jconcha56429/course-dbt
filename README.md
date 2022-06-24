@@ -1,5 +1,5 @@
 # Analytics engineering with dbt
-Week 1 Project has been commented out for your viewing pleasure!
+Week 1 & 2 Project have been commented out for your viewing pleasure!
 <!-- 
 ## Week 1 Project 
 
@@ -33,7 +33,7 @@ Approximately 336,252 seconds or 5,604 minutes or about 4 days rounded up
 16.32 unique sessions per hour 
 
 ![Alt text](/images/Screenshot_10.png)  -->
-
+<!-- 
 ## Week 2 Project 
 
 # Question 1 - What is our user repeat rate?
@@ -97,4 +97,26 @@ I also did find that I had originally missed some categorical data when making m
 # Question 8 - Explain how you would ensure these tests are passing regularly and how you would alert stakeholders about bad data getting through.
 I think the best thing to do in order to make sure that these tests pass regularly would be to set up freshness and run tests regularly everyday at the begginning and end of day to see how we can better incorporate tests and deal with data via transformation. 
 
-If I had full control of this entire project, after a test failed, I would implement a change within the models to transform the data or work with engineering to make sure that this data is not able to be stored in the first place. To ease steakholders, we could host a post-mortem on how we intend to deal with the data in the future and how it impacted the data if so. 
+If I had full control of this entire project, after a test failed, I would implement a change within the models to transform the data or work with engineering to make sure that this data is not able to be stored in the first place. To ease steakholders, we could host a post-mortem on how we intend to deal with the data in the future and how it impacted the data if so.  -->
+
+## Week 3 Project
+
+### PART 1: Create new models to answer the first two questions (answer questions in README file)
+- Question 1 - What is our overall conversion rate?
+- Question 2 - What is our conversion rate by product?
+- Question 3 - Why might certain products be converting at higher/lower rates than others? Note: we don't actually have data to properly dig into this, but we can make some hypotheses.
+
+### PART 2 - We’re getting really excited about dbt macros after learning more about them and want to apply them to improve our dbt project. 
+- Create a macro to simplify part of a model
+- Note: One potential macro in our data set is aggregating event types per session. Start here as your first macro and add other macros if you want to go further.
+
+
+### PART 3 - We’re starting to think about granting permissions to our dbt models in our postgres database so that other roles can have access to them.
+- Add a post hook to your project to apply grants to the role “reporting”. Create reporting role first by running CREATE ROLE reporting in your database instance.
+
+
+### Part 4 -  After learning about dbt packages, we want to try one out and apply some macros or tests.
+- Install a package (i.e. dbt-utils, dbt-expectations) and apply one or more of the macros to your project
+
+### Part 5 - After improving our project with all the things that we have learned about dbt, we want to show off our work!
+- Show (using dbt docs and the model DAGs) how you have simplified or improved a DAG using macros and/or dbt packages.
