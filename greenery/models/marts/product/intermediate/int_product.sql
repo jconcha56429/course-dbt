@@ -4,6 +4,7 @@
     )
 }}
 
+
 SELECT 
     e.user_id,
     a.address,
@@ -16,11 +17,11 @@ SELECT
     e.created_at AS event_created_at,
     e.event_type,
     e.order_id,
-    e.product_id,
-    CASE 
-        WHEN e.order_id IS NOT NULL AND e.event_type = 'checkout' THEN 1
-        ELSE 0
-    END AS order_made
+    e.product_id
+{% for event_type in ["checkout", "package_shipped", "add_to_cart","page_view"] %}
+, case when event_type = '{{event_type}}' then 1 else 0 end as {{event_type}}
+{% endfor %}
+
 FROM {{ ref('greenery_events')}} e
 LEFT JOIN {{ref('greenery_orders')}} o
 ON o.order_id = e.order_id 
