@@ -106,14 +106,28 @@ If I had full control of this entire project, after a test failed, I would imple
 Conversion rate - 62.46%
 
 - Question 2 - What is our conversion rate by product?
+Varying of course, but here's the top 5. I beleive there's a big possibility I may have accidentally removed some important data as I noticed my answer wasn't the same as others! 
 
 
 - Question 3 - Why might certain products be converting at higher/lower rates than others? Note: we don't actually have data to properly dig into this, but we can make some hypotheses.
+If I had more time to look into this, I would explore: 
+    - which products discounts are used on and if they have exclusivity to certain items
+    - Inventory available for each of these items 
+    - Which users are making the most purchases and if they keep buying the same item
+    - When items are being bought in the season, some items may be more luxury items as gifts 
+    - Price of items 
+
 
 ### PART 2 - We’re getting really excited about dbt macros after learning more about them and want to apply them to improve our dbt project. 
 - Create a macro to simplify part of a model
 - Note: One potential macro in our data set is aggregating event types per session. Start here as your first macro and add other macros if you want to go further.
 
+- ideas
+    - turn this into a simplified macro
+    - time between on delivery 
+    - non-negative tests 
+    - categorical tests
+    - email regex
 
 ### PART 3 - We’re starting to think about granting permissions to our dbt models in our postgres database so that other roles can have access to them.
 - Add a post hook to your project to apply grants to the role “reporting”. Create reporting role first by running CREATE ROLE reporting in your database instance.
