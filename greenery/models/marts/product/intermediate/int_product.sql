@@ -5,6 +5,7 @@
 }}
 
 
+
 SELECT 
     e.user_id,
     a.address,
@@ -18,7 +19,7 @@ SELECT
     e.event_type,
     e.order_id,
     e.product_id
-    {{ to_boolean_event_types('e.event_type') }}
+    {{ to_boolean_event_types() }}
 
 FROM {{ ref('greenery_events')}} e
 LEFT JOIN {{ref('greenery_orders')}} o

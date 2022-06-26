@@ -16,6 +16,7 @@ SELECT
     o.promo_id,
     o.created_at as order_created_at,
     o.order_cost,
+    o.shipping_service,
     o.tracking_id,
     o.estimated_delivery_at,
     o.delivered_at,
