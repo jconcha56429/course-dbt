@@ -110,7 +110,7 @@ Conversion rate - 62.46%
 - Question 2 - What is our conversion rate by product?
 Varying of course, but here's the top 5. I beleive there's a big possibility I may have accidentally removed some important data as I noticed my answer wasn't the same as others! 
 
-![Alt text](/images/product_conversion.png) 
+![Alt text](/images/product_conversion_rate.png) 
 
 - Question 3 - Why might certain products be converting at higher/lower rates than others? Note: we don't actually have data to properly dig into this, but we can make some hypotheses.
 If I had more time to look into this, I would explore: 
