@@ -122,20 +122,20 @@ If I had more time to look into this, I would explore:
 - Create a macro to simplify part of a model
 - Note: One potential macro in our data set is aggregating event types per session. Start here as your first macro and add other macros if you want to go further.
 
-- ideas
-    - turn this into a simplified macro
-    - time between on delivery 
-    - non-negative tests 
-    - categorical tests
-    - email regex
+I decided to make a macro, delivery_time_status to tell whether an order was early/late/on-time depending on the difference between estimated_delivery_at & delivered_at. 
+
+Additionally, I used the macro to_boolean_event_types to create separate boolean columns depending on the event type for int_product.
 
 ### PART 3 - We’re starting to think about granting permissions to our dbt models in our postgres database so that other roles can have access to them.
 - Add a post hook to your project to apply grants to the role “reporting”. Create reporting role first by running CREATE ROLE reporting in your database instance.
 
+Done √
 
 ### Part 4 -  After learning about dbt packages, we want to try one out and apply some macros or tests.
 - Install a package (i.e. dbt-utils, dbt-expectations) and apply one or more of the macros to your project
 I used the package dbt_utils on the model greenery_orders for the datediff macro, which is very similar to using a basic datetime minus.
+
+I also created my own email regular expression tests for dim_users as I wasn't successful in finding one online, although I'm sure they exist! 
 
 ### Part 5 - After improving our project with all the things that we have learned about dbt, we want to show off our work!
 - Show (using dbt docs and the model DAGs) how you have simplified or improved a DAG using macros and/or dbt packages.

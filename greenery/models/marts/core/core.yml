@@ -12,6 +12,7 @@ models:
         tests: 
           - not_null
           - unique
+          - email_regex
       - name: first_name
         tests:
           - not_null
