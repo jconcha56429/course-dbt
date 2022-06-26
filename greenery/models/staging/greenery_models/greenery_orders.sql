@@ -17,6 +17,8 @@ SELECT
   shipping_service,
   estimated_delivery_at,
   delivered_at,
-  status
+  status,
+  {{dbt_utils.datediff('delivered_at','estimated_delivery_at', 'day')}} as estimated_vs_actual_delivery_date
+
   FROM {{ source('greenery_source', 'orders') }}
 

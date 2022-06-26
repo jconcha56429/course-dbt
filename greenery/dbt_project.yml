@@ -33,6 +33,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   greenery:
+    on-run-end:
+      - "grant usage on schema {{ dbt_jacob_c }} to group reporter"
+      - "grant select on all tables in schema {{ dbt_jacob_c }} group reporter"
+
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view

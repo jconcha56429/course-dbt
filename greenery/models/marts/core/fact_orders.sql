@@ -24,7 +24,8 @@ SELECT
     o.status,
     o.promo_id,
     p.discount,
-    qs.order_quantity_total
+    qs.order_quantity_total,
+    {{ delivery_time_status('o.estimated_vs_actual_delivery_date')}} as estimated_delivery_status
 FROM {{ref('greenery_orders')}} o
 LEFT JOIN quantity_sum qs
 ON o.order_id = qs.order_id

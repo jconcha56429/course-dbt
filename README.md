@@ -135,6 +135,7 @@ If I had more time to look into this, I would explore:
 
 ### Part 4 -  After learning about dbt packages, we want to try one out and apply some macros or tests.
 - Install a package (i.e. dbt-utils, dbt-expectations) and apply one or more of the macros to your project
+I used the package dbt_utils on the model greenery_orders for the datediff macro, which is very similar to using a basic datetime minus.
 
 ### Part 5 - After improving our project with all the things that we have learned about dbt, we want to show off our work!
 - Show (using dbt docs and the model DAGs) how you have simplified or improved a DAG using macros and/or dbt packages.

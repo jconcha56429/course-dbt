@@ -18,9 +18,7 @@ SELECT
     e.event_type,
     e.order_id,
     e.product_id
-{% for event_type in ["checkout", "package_shipped", "add_to_cart","page_view"] %}
-, case when event_type = '{{event_type}}' then 1 else 0 end as {{event_type}}
-{% endfor %}
+    {{ to_boolean_event_types('e.event_type') }}
 
 FROM {{ ref('greenery_events')}} e
 LEFT JOIN {{ref('greenery_orders')}} o
