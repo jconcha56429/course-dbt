@@ -153,11 +153,15 @@ I also created my own email regular expression tests for dim_users as I wasn't s
 
 ### Part 1 - DBT Snapshot
 
+Status - Done
+
 ### Part 2 - Modeling Challenege
 
-- How are our users moving through the product funnel?
+In order to complete this task, I created the two models fact_session_funnel for the intial data  & fact_product_funnel_metrics for the actual math and funnel conversions 
 
-- Which steps in the funnel have largest drop off points?
+- There are 578 total unique sessions to date
+- Within thhose unique sessions, 467 of those sessions included an add to cart event, for 80% of unique sessions
+- Within those 467 that completed the add to cart event, 361 of those completed the checkout event for 77% of sessions which completed the add to cart event 
 
 ### Part 3 - 
 

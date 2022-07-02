@@ -1,0 +1,14 @@
+version: 2
+
+exposures:  
+  - name: Product Funnel Dashboard
+    description: >
+      Models that are critical to our product funnel dashboard
+    type: dashboard
+    maturity: high
+    owner:
+      name: Jacob Concha 
+      email: jconcha@greeneery.com
+    depends_on:
+      - ref('fact_session_funnel')
+      - ref('fact_product_funnel_metrics')
