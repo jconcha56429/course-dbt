@@ -155,6 +155,10 @@ I also created my own email regular expression tests for dim_users as I wasn't s
 
 Status - Done
 
+![Alt text](/images/snapshot_1.png) 
+
+![Alt text](/images/snapshot_2.png) 
+
 ### Part 2 - Modeling Challenege
 
 In order to complete this task, I created the two models fact_session_funnel for the intial data  & fact_product_funnel_metrics for the actual math and funnel conversions 
@@ -163,5 +167,12 @@ In order to complete this task, I created the two models fact_session_funnel for
 - Within thhose unique sessions, 467 of those sessions included an add to cart event, for 80% of unique sessions
 - Within those 467 that completed the add to cart event, 361 of those completed the checkout event for 77% of sessions which completed the add to cart event 
 
-### Part 3 - 
+![Alt text](/images/product_funnel_metrics.png) 
 
+### Part 3A - dbt next steps for you 
+
+if your organization is using dbt, what are 1-2 things you might do differently / recommend to your organization based on learning from this course?
+- It's a bit hard to say I'd do anything differently as I'm actually not as tenured as our senior analytics engineers. However if my company wasn't already using dbt, I would highly recommend using it for purposes of version control and the easy usability when creating models for analytics. Especailly because our customers are regularly looking to receive new insights on how well our platform is working for them. 
+
+if you are thinking about moving to analytics engineering, what skills have you picked that give you the most confidence in pursuing this next step?
+- Although I can't say I'm 100% satistfied with how my project turned out given the little time I've had to pick up these huge ideas. However, I can say that it has given me the tools necessary for basic data modeling. Overall, this course was very enjoyable and I think I've just become one step closer to my goal of being on the data team. 
