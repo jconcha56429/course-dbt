@@ -25,3 +25,9 @@ models:
           - not_null
   - name: conversion_rate
     description: conversion rate for unique session_id from int_product
+  - name: fact_session_funnel
+    description: data for product funnel query
+    columns:
+      - name: session_id
+        tests:
+          - unique

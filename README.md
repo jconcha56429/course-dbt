@@ -98,7 +98,7 @@ I also did find that I had originally missed some categorical data when making m
 I think the best thing to do in order to make sure that these tests pass regularly would be to set up freshness and run tests regularly everyday at the begginning and end of day to see how we can better incorporate tests and deal with data via transformation. 
 
 If I had full control of this entire project, after a test failed, I would implement a change within the models to transform the data or work with engineering to make sure that this data is not able to be stored in the first place. To ease steakholders, we could host a post-mortem on how we intend to deal with the data in the future and how it impacted the data if so.  -->
-
+<!-- 
 ## Week 3 Project
 
 ### PART 1: Create new models to answer the first two questions (answer questions in README file) [Specifically create a model for this piece]
@@ -147,4 +147,17 @@ I also created my own email regular expression tests for dim_users as I wasn't s
 - Show (using dbt docs and the model DAGs) how you have simplified or improved a DAG using macros and/or dbt packages.
 
 
-![Alt text](/images/dag_2.png) 
+![Alt text](/images/dag_2.png)  -->
+
+## Week 4 Project 
+
+### Part 1 - DBT Snapshot
+
+### Part 2 - Modeling Challenege
+
+- How are our users moving through the product funnel?
+
+- Which steps in the funnel have largest drop off points?
+
+### Part 3 - 
+
