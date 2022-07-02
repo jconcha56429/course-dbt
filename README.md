@@ -169,10 +169,12 @@ In order to complete this task, I created the two models fact_session_funnel for
 
 ![Alt text](/images/product_funnel_metrics.png) 
 
+![Alt text](/images/dag_3.png) 
+
 ### Part 3A - dbt next steps for you 
 
 if your organization is using dbt, what are 1-2 things you might do differently / recommend to your organization based on learning from this course?
-- It's a bit hard to say I'd do anything differently as I'm actually not as tenured as our senior analytics engineers. However if my company wasn't already using dbt, I would highly recommend using it for purposes of version control and the easy usability when creating models for analytics. Especailly because our customers are regularly looking to receive new insights on how well our platform is working for them. 
+- It's a bit hard to say I'd do anything differently as I'm actually not as tenured as our senior analytics engineers. However if my company wasn't already using dbt, I would highly recommend using it for purposes of version control and transforming data. DBT is also pretty intuitive and relatively easy to pick up for those familiar with basic data principles.
 
 if you are thinking about moving to analytics engineering, what skills have you picked that give you the most confidence in pursuing this next step?
-- Although I can't say I'm 100% satistfied with how my project turned out given the little time I've had to pick up these huge ideas. However, I can say that it has given me the tools necessary for basic data modeling. Overall, this course was very enjoyable and I think I've just become one step closer to my goal of being on the data team. 
+- I can't say I'm 100% satistfied with how my project turned out given the little time I've had to pick up these huge ideas. However, I can say that it has given me the tools necessary for basic data modeling with dbt. Overall, this course was very enjoyable and I think I've just become one step closer to my goal of being on the data team. 
