@@ -31,3 +31,5 @@ models:
       - name: session_id
         tests:
           - unique
+  - name: fact_product_funnel_metrics
+    description: product funnel for session metrics
